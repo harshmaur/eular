@@ -27,3 +27,23 @@ func EvenlyDivisible() {
 	}
 
 }
+
+// LargestPrime finds the largest prime factor of the supplied number
+func LargestPrime(n int) {
+	start := time.Now()
+	i := 2
+	// si := make([]int, 0, 0)
+	for n >= i {
+		if n%i == 0 {
+			// si = append(si, i)
+			fmt.Println("number", i)
+			n = n / i
+		} else {
+			// fmt.Println(i)
+			i++
+		}
+	}
+	// fmt.Println(si)
+	elapsed := time.Since(start)
+	fmt.Printf("Binomial took %s", elapsed)
+}

@@ -1,15 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"time"
-
-	"github.com/harshmaur/eular/problems"
-)
+import "github.com/harshmaur/eular/problems"
 
 func main() {
-	start := time.Now()
-	problems.EvenlyDivisible()
-	elapsed := time.Since(start)
-	fmt.Printf("Binomial took %s", elapsed)
+
+	// problems.EvenlyDivisible()
+	problems.LargestPrime(600851475143)
+
 }
