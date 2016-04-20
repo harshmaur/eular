@@ -47,3 +47,15 @@ func LargestPrime(n int) {
 	elapsed := time.Since(start)
 	fmt.Printf("Binomial took %s", elapsed)
 }
+
+// IsPalindrome checked if the given string is palindrome is not.
+func IsPalindrome(s string) bool {
+	n := len(s)
+	sb := []byte(s)
+	for i := 0; i < (n/2)+1; i++ {
+		if sb[i] != sb[(n-i)-1] {
+			return false
+		}
+	}
+	return true
+}
