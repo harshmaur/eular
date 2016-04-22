@@ -59,3 +59,5 @@ func IsPalindrome(s string) bool {
 	}
 	return true
 }
+
+// Need to add func to find the largest palindrome!

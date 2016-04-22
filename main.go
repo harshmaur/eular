@@ -11,5 +11,4 @@ func main() {
 	// problems.EvenlyDivisible()
 	// problems.LargestPrime(600851475143)
 	fmt.Println(problems.IsPalindrome("hohs"))
-
 }
